@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7c6da">
+  <title>PinkCalculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="calculator.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <main class="calculator" aria-labelledby="title">
+    <p class="eyebrow">A little pink. A little practical.</p>
+    <h1 id="title">PinkCalculator<span aria-hidden="true"> ✦</span></h1>
+    <div class="screen">
+      <p id="operation" aria-hidden="true">Ready when you are</p>
+      <output id="display" aria-label="Result" aria-live="polite" aria-atomic="true">0</output>
+    </div>
+    <div class="keys" aria-label="Calculator keys">
+      <button data-key="clear" class="utility" aria-label="Clear all">AC</button>
+      <button data-key="sign" class="utility" aria-label="Change sign">+/−</button>
+      <button data-key="backspace" class="utility" aria-label="Delete last digit">⌫</button>
+      <button data-key="/" class="operator" aria-label="Divide">÷</button>
+      <button data-key="7">7</button><button data-key="8">8</button><button data-key="9">9</button>
+      <button data-key="*" class="operator" aria-label="Multiply">×</button>
+      <button data-key="4">4</button><button data-key="5">5</button><button data-key="6">6</button>
+      <button data-key="-" class="operator" aria-label="Subtract">−</button>
+      <button data-key="1">1</button><button data-key="2">2</button><button data-key="3">3</button>
+      <button data-key="+" class="operator" aria-label="Add">+</button>
+      <button data-key="0" class="zero">0</button><button data-key="." aria-label="Decimal point">.</button>
+      <button data-key="=" class="equals" aria-label="Equals">=</button>
+    </div>
+    <p class="hint">Keyboard friendly · Enter = equals · Esc = clear</p>
+    <noscript>Please enable JavaScript to use the calculator.</noscript>
+  </main>
+</body>
+</html>
